@@ -4,7 +4,8 @@ from django.views.generic import TemplateView,  UpdateView, CreateView, DeleteVi
 from .models import *
 from .forms import *
 
-
+class IndexView(TemplateView):
+    template_name = "index.html"
 class StudentView(TemplateView):
     template_name = "student.html"
 
